@@ -1,5 +1,3 @@
-
-
 /*
  * Install the Generative AI SDK
  *
@@ -9,13 +7,14 @@
  * https://ai.google.dev/gemini-api/docs/get-started/node
  */
 
+
+// const apiKey = process.env.VITE_API_BASE_URL;
+const apiKey = import.meta.env.VITE_GEMINE_API_KEY;
+
 import {
   GoogleGenerativeAI
 } from "@google/generative-ai";
 
-const apiKey = process.env.GEMINI_API_KEY;
-
-// "AIzaSyDQy_61FvWRo0Z_X-fZFG0zR9mEvM8O2KU"
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
